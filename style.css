@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: gray;
+}
+.btn{
+    margin: 10rem;
+    content: "";
+    color: cornsilk;
+    width: 300px;
+    height: 0%;
+    padding: 2% 2%;
+    border: none;
+    background-color: black;
+    border-radius: 10px;
+    transition: 0.3s;
+    outline: none;
+    font-size: 1rem;
+    box-shadow: inset 150px 0 0 0 rgb(23, 182, 169);
+    overflow: hidden;
+}
+.btn:hover{
+    box-shadow: inset -50px 0px 0px 0px rgb(23, 182, 169);
+}
+
+.btn-2
+{
+    
+    margin: 10rem;
+    content: "";
+    color: rgb(255, 255, 255);
+    width: 300px;
+    height: 0%;
+    padding: 2% 2%;
+    border: 3px solid white;
+    background-color: rgb(77, 74, 74);
+    border-radius: 10px;
+    transition: ease-out 0.6s;
+    outline: none;
+    font-size: 1rem;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-2:hover
+{
+    color: rgb(53, 52, 52);
+    cursor: pointer;
+}
+.btn-2::before{
+    transition: 0.6s all ease;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    background-color: white;
+    border-bottom-left-radius: 1%;
+}
+.btn-2:hover::before
+{
+    transition: 0.6s all ease;
+    left: 10%;
+    right: 10%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    opacity: 1;
+    z-index: -1;
+}
+/*
+.btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: black;
+    z-index: -1;
+    transition: 0.8s;
+    top: 0;
+    border-radius: 0 0 50% 50%;
+    height: 180%;
+}
+.btn:hover::before{
+    height: 180%;
+}
+*/
